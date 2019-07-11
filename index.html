@@ -1,259 +1,185 @@
+
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>Landing Page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/fonts/themify-icons/themify-icons.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap4/bootstrap-grid.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel/owl.carousel.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ula</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/all.js"></script>
-</head>
+	<body>
+		<div class="page-wrap">
 
-<body>
-    <nav class="navbar has-shadow">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox"
-                    width="112" height="28">
-            </a>
-            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                <span></span>
-                <span></span>
-                <span></span>
+			<!-- header -->
+			<header class="header header__style-02">
+				<div class="container">
+					<div class="header__logo"><a href="index.html">
+            <img src="assets/img/logo3.png" alt=""/>
+          </a></div>
+					<div class="header__toogleGroup">
+						<div class="header__chooseLanguage">
+										<!-- dropdown -->
+										<div class="dropdown" data-init="dropdown"><a class="dropdown__toggle" href="javascript:void(0)">EN <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+											<div class="dropdown__content" data-position="right">
+												<ul class="list-style-none">
+													<li><a href="#">EN</a></li>
+													<li><a href="#">ID</a></li>
+												</ul>
+											</div>
+										</div><!-- End / dropdown -->
+
+						</div>
+						<div class="search-form">
+							<div class="search-form__toggle"><i class="ti-search"></i></div>
+							<div class="search-form__form">
+
+												<!-- form-search -->
+												<div class="form-search">
+													<form>
+														<input class="form-control" type="text" placeholder="Hit enter to search or ESC to close"/>
+													</form>
+												</div><!-- End / form-search -->
+
+							</div>
+						</div>
+					</div>
+
+					<!-- consult-nav -->
+					<nav class="consult-nav">
+
+						<!-- consult-menu -->
+						<ul class="consult-menu">
+							<li class="current-menu-item"><a href="index.html">Home</a>
+							</li>
+							<li><a href="about.html">about</a>
+							</li>
+							<li class="menu-item-has-children"><a href="#">page</a>
+								<ul class="sub-menu">
+									<li><a href="comming-soon.html">Comming Soon</a>
+									</li>
+									<li><a href="404.html">404</a>
+									</li>
+									<li><a href="typography.html">Typography</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="service.html">services</a>
+							</li>
+							<li class="menu-item-has-children"><a href="project.html">project</a>
+								<ul class="sub-menu">
+									<li><a href="project-detail.html">Project detail</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children"><a href="blog.html">blog</a>
+								<ul class="sub-menu">
+									<li><a href="blog-detail.html">Blog detail</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="contact.html">contact</a>
+							</li>
+						</ul><!-- consult-menu -->
+
+						<div class="navbar-toggle"><span></span><span></span><span></span></div>
+					</nav><!-- End / consult-nav -->
+
+				</div>
+			</header><!-- End / header -->
+      			<!-- Content-->
+			<div class="md-content">
+
+				<!-- slider -->
+				<div class="slider">
+
+					<!-- carousel__element owl-carousel -->
+					<div class="carousel__element owl-carousel" data-options='{"items":1,"loop":true,"dots":false,"nav":false,"margin":0, "autoplay": true, "autoplayTimeout": 3000}'>
+						<div class="slider__item clip-ellipse" style="background-image: url('assets/img/banner-img.jpg');">
+              <div class="ovrllay">
+							<div class="md-tb">
+								<div class="md-tb__cell">
+									<div class="slider__content">
+										<div class="container">
+											<h2>Hello World !</h2>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
             </div>
-        </div>
+					</div><!-- End / carousel__element owl-carousel -->
 
-        <div id="navbarExampleTransparentExample" class="navbar-menu">
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <a class="navbar-item" href="https://bulma.io/">
-                        Home
-                    </a>
-                    <a class="navbar-item" href="https://bulma.io/">
-                        Home
-                    </a>
-                    <a class="navbar-item" href="https://bulma.io/">
-                        Home
-                    </a>
-                    <a class="navbar-item" href="https://bulma.io/">
-                        Home
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
+				</div><!-- End / slider -->
 
-    <section class="section">
-        <div class="container">
-            <div class="columns">
-                <div class="column">
-                    <h1>Lorem Ipsum</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione vero culpa cupiditate
-                        ipsa maiores. Explicabo porro sint quo ullam fuga quos architecto fugiat maiores, qui iure
-                        assumenda vero animi?</p>
-                </div>
-                <div class="column">
+				<!-- Service-->
 
-                </div>
-            </div>
-        </div>
-    </section>
+				<!-- Section -->
+				<section class="md-section" style="background-color:#f7f7f7;padding:0;">
+					<div class="container">
+						<div class="textbox-group">
+							<div class="row">
+								<div class="col-md-4 col-lg-4 ">
 
-    <section class="section">
-        <div class="container">
-            <div class="columns">
-                <div class="column has-text-centered">
-                    <h1 class="title is-3">SERVICES</h1>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <img src="https://bulma.io/images/placeholders/96x96.png"
-                                            alt="Placeholder image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">John Smith</p>
-                                    <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
+									<!-- textbox -->
+									<div class="textbox">
+										<div class="textbox__image"><a href="#"><img src="assets/img/development3.png" alt=""/></a></div>
+										<div class="textbox__body">
+											<h2 class="textbox__title"><a href="#">Mobile Development</a></h2>
+											<div class="textbox__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet ut lacus a tincidunt. Quisque lu</div>
+										</div>
+									</div><!-- End / textbox -->
 
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <img src="https://bulma.io/images/placeholders/96x96.png"
-                                            alt="Placeholder image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">John Smith</p>
-                                    <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
+								</div>
+								<div class="col-md-4 col-lg-4 ">
 
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <img src="https://bulma.io/images/placeholders/96x96.png"
-                                            alt="Placeholder image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">John Smith</p>
-                                    <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
+									<!-- textbox -->
+									<div class="textbox">
+										<div class="textbox__image"><a href="#"><img src="assets/img/development3.png" alt=""/></a></div>
+										<div class="textbox__body">
+											<h2 class="textbox__title"><a href="#">Website Development</a></h2>
+											<div class="textbox__description">Nam elit ligula, egestas et ornare non, viverra eu justo. Aliquam ornare lectus ut pharetra dictum. </div>
+										</div>
+									</div><!-- End / textbox -->
 
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <img src="https://bulma.io/images/placeholders/96x96.png"
-                                            alt="Placeholder image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">John Smith</p>
-                                    <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
+								</div>
+								<div class="col-md-4 col-lg-4 ">
 
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section" style="background-color: gray;">
-        <div class="container">
-            <div class="columns has-text-centered">
-                <div class="column">
-                    <h1 class="title is-3">CONTACT ME</h1>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column is-6"></div>
-                <div class="column">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="content">
-                                <div class="field">
-                                    <label class="label">Nama</label>
-                                    <div class="control has-icons-left">
-                                        <input class="input" type="text" placeholder="John Doe">
-                                        <span class="icon is-small is-left">
-                                            <i class="fas fa-user"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <label class="label">Email</label>
-                                    <div class="control has-icons-left">
-                                        <input class="input" type="email" placeholder="email@example.com">
-                                        <span class="icon is-small is-left">
-                                            <i class="fas fa-envelope"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <label class="label">Tanggal</label>
-                                    <div class="control has-icons-left">
-                                        <input class="input" type="date">
-                                        <span class="icon is-small is-left">
-                                            <i class="fas fa-envelope"></i>
-                                        </span>
-                                    </div>
-                                </div>
+									<!-- textbox -->
+									<div class="textbox">
+										<div class="textbox__image"><a href="#"><img src="assets/img/development3.png" alt=""/></a></div>
+										<div class="textbox__body">
+											<h2 class="textbox__title"><a href="#">Desktop Development</a></h2>
+											<div class="textbox__description">Mauris lacinia venenatis dolor sit amet viverra. Integer malesuada nulla neque. Sed rutrum ligula eu</div>
+										</div>
+									</div><!-- End / textbox -->
 
-                                <div class="field">
-                                    <label class="label">Deskripsi</label>
-                                    <div class="control">
-                                        <textarea class="textarea" placeholder="Deskripsikan tugas disini.."></textarea>
-                                    </div>
-                                </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End / Section -->
 
-                                <div class="field is-grouped">
-                                    <button type="submit" class="button is-primary">Simpan</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</body>
 
+		</div>
+		<!-- Vendors-->
+		<script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.countUp/jquery.countup.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+
+		<script type="text/javascript" src="assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="assets/js/masonry-layout/masonry.pkgd.js"></script>
+		<script type="text/javascript" src="assets/js/owl.carousel/owl.carousel.js"></script>
+		<script type="text/javascript" src="assets/js/menu/menu.min.js"></script>
+		<!-- App-->
+		<script type="text/javascript" src="assets/js/main.js"></script>
+	</body>
 </html>
