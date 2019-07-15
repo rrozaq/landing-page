@@ -1,185 +1,370 @@
-
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Landing Page</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<meta name="format-detection" content="telephone=no">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/fonts/themify-icons/themify-icons.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap4/bootstrap-grid.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel/owl.carousel.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	</head>
 
-	<body>
-		<div class="page-wrap">
+<head>
+	<title>Landing Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+	<link type="text/css"  href="assets/fonts/ionicons/css/ionicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/fonts/themify-icons/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap4/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
 
-			<!-- header -->
-			<header class="header header__style-02">
-				<div class="container">
-					<div class="header__logo"><a href="index.html">
-            <img src="assets/img/logo3.png" alt=""/>
-          </a></div>
-					<div class="header__toogleGroup">
-						<div class="header__chooseLanguage">
-										<!-- dropdown -->
-										<div class="dropdown" data-init="dropdown"><a class="dropdown__toggle" href="javascript:void(0)">EN <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-											<div class="dropdown__content" data-position="right">
-												<ul class="list-style-none">
-													<li><a href="#">EN</a></li>
-													<li><a href="#">ID</a></li>
-												</ul>
-											</div>
-										</div><!-- End / dropdown -->
-
-						</div>
-						<div class="search-form">
-							<div class="search-form__toggle"><i class="ti-search"></i></div>
-							<div class="search-form__form">
-
-												<!-- form-search -->
-												<div class="form-search">
-													<form>
-														<input class="form-control" type="text" placeholder="Hit enter to search or ESC to close"/>
-													</form>
-												</div><!-- End / form-search -->
-
+<body>
+	<div class="wrapper">
+		<header class="header header-style" id="home">
+			<div class="container">
+				<div class="header-logo"><a href="index.html">
+						<img src="assets/img/logo3.png" alt="" />
+					</a></div>
+				<div class="header-toogleGroup">
+					<div class="header-chooseLanguage">
+						<div class="dropdown" data-init="dropdown"><a class="dropdown-toggle"
+								href="javascript:void(0)">EN <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							<div class="dropdown-content" data-position="right">
+								<ul class="list-style-none">
+									<li><a href="#">EN</a></li>
+									<li><a href="#">ID</a></li>
+								</ul>
 							</div>
 						</div>
 					</div>
-
-					<!-- consult-nav -->
-					<nav class="consult-nav">
-
-						<!-- consult-menu -->
-						<ul class="consult-menu">
-							<li class="current-menu-item"><a href="index.html">Home</a>
-							</li>
-							<li><a href="about.html">about</a>
-							</li>
-							<li class="menu-item-has-children"><a href="#">page</a>
-								<ul class="sub-menu">
-									<li><a href="comming-soon.html">Comming Soon</a>
-									</li>
-									<li><a href="404.html">404</a>
-									</li>
-									<li><a href="typography.html">Typography</a>
-									</li>
-								</ul>
-							</li>
-							<li><a href="service.html">services</a>
-							</li>
-							<li class="menu-item-has-children"><a href="project.html">project</a>
-								<ul class="sub-menu">
-									<li><a href="project-detail.html">Project detail</a>
-									</li>
-								</ul>
-							</li>
-							<li class="menu-item-has-children"><a href="blog.html">blog</a>
-								<ul class="sub-menu">
-									<li><a href="blog-detail.html">Blog detail</a>
-									</li>
-								</ul>
-							</li>
-							<li><a href="contact.html">contact</a>
-							</li>
-						</ul><!-- consult-menu -->
-
-						<div class="navbar-toggle"><span></span><span></span><span></span></div>
-					</nav><!-- End / consult-nav -->
-
+					<div class="search-form">
+						<div class="search-form-toggle"><i class="ti-search"></i></div>
+						<div class="search-form_form">
+							<div class="form-search">
+								<form>
+									<input class="form-control" type="text"
+										placeholder="Hit enter to search or ESC to close" />
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
-			</header><!-- End / header -->
-      			<!-- Content-->
-			<div class="md-content">
-
-				<!-- slider -->
-				<div class="slider">
-
-					<!-- carousel__element owl-carousel -->
-					<div class="carousel__element owl-carousel" data-options='{"items":1,"loop":true,"dots":false,"nav":false,"margin":0, "autoplay": true, "autoplayTimeout": 3000}'>
-						<div class="slider__item clip-ellipse" style="background-image: url('assets/img/banner-img.jpg');">
-              <div class="ovrllay">
+				<nav class="navbar">
+					<ul class="menu">
+						<li class="current-menu-item"><a href="index.html">Home</a></li>
+						<!-- <li class="menu-item-has-children"><a href="#">page</a>
+							<ul class="sub-menu">
+								<li><a href="#">Comming Soon</a>
+								</li>
+								<li><a href="#">404</a>
+								</li>
+								<li><a href="#">Typography</a>
+								</li>
+							</ul>
+						</li> -->
+						<li><a class="smoothscroll" href="#services">services</a></li>
+						<li><a class="smoothscroll" href="#about">about</a></li>
+						<li><a class="smoothscroll" href="#testimonial">testimonial</a></li>
+						<li><a class="smoothscroll" href="#contact">contact</a>
+						</li>
+					</ul>
+					<div class="navbar-toggle"><span></span><span></span><span></span></div>
+				</nav>
+			</div>
+		</header>
+			<div class="slider">
+				<div class="carousel-element owl-carousel"
+					data-options='{"items":1,"loop":true,"dots":false,"nav":false,"margin":0, "autoplay": true, "autoplayTimeout": 3000}'>
+					<div class="slider-item clip-ellipse" style="background-image: url('assets/img/banner-img.jpg');">
+						<div class="ovrllay">
 							<div class="md-tb">
-								<div class="md-tb__cell">
-									<div class="slider__content">
+								<div class="md-tb-cell">
+									<div class="slider-content">
 										<div class="container">
-											<h2>Hello World !</h2>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											<h2>Hello, Welcome to Our Brand </h2>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</div>
+									<span id="services"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="textbox-section" >
+				<div class="container">
+					<div class="textbox-group">
+						<div class="row">
+							<div class="col-md-4 col-lg-4 ">
+								<div class="textbox">
+									<div class="textbox-image"><a href="#"><img src="assets/img/development3.png"
+												alt="" /></a></div>
+									<div class="textbox-body">
+										<h2 class="textbox-title"><a href="#">Mobile Development</a></h2>
+										<div class="textbox-description">Lorem ipsum dolor sit amet, consectetur
+											adipiscing elit. Ut laoreet ut lacus a tincidunt. Quisque lu</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-lg-4 ">
+								<div class="textbox">
+									<div class="textbox-image"><a href="#"><img src="assets/img/development3.png"
+												alt="" /></a></div>
+									<div class="textbox-body">
+										<h2 class="textbox-title"><a href="#">Website Development</a></h2>
+										<div class="textbox-description">Nam elit ligula, egestas et ornare non, viverra
+											eu justo. Aliquam ornare lectus ut pharetra dictum. </div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-lg-4 ">
+								<div class="textbox">
+									<div class="textbox-image"><a href="#"><img src="assets/img/development3.png"
+												alt="" /></a></div>
+									<div class="textbox-body">
+										<h2 class="textbox-title"><a href="#">Desktop Development</a></h2>
+										<div class="textbox-description">Mauris lacinia venenatis dolor sit amet
+											viverra. Integer malesuada nulla neque. Sed rutrum ligula eu</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<span id="about"></span>
+					</div>
+				</div>
+			</section> 
+
+			<section class="about-section about-slant about-slant-white" >
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h2 class="text-uppercase">About Us</h2>
+							<div class="row justify-content-center mb-5">
+								<div class="col-md-7">
+									<p class="lead">Far far away, behind the word mountains, far from the countries
+										Vokalia and
+										Consonantia, there live the blind texts.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<section class="service-section service-slant service-slant-dark">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h2 class="text-uppercase">Mau di isi apa ini gan ?</h2>
+							<div class="row justify-content-center mb-5">
+								<div class="col-md-12">
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section><span id="testimonial"></span>
+			<section class="portfolio-section portfolio-slant portfolio-slant-white" id="section-counter">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h2 class="text-uppercase">What’s Client Say?</h2>
+							<div class="row justify-content-center mb-5">
+								<div class="col-md-12">
+									<div class="our-slide">
+										<div class="carousel-element owl-carousel"
+											data-options='{"loop":true,"dots":true,"nav":false,"margin":30,"responsive":{"0":{"items":1},"992":{"items":2}}}'>
+											<div class="testimonial">
+												<div class="testimonial-info"><a class="testimonial-avatar"
+														href="#"><img src="assets/img/avatars/avatar-01.jpg"
+															alt="" /></a>
+													<h5 class="testimonial-name">Brandon Hanson</h5><span
+														class="testimonial-position">Support</span>
+												</div>
+												<div class="testimonial-content">
+													<div class="testimonial-text">"Lorem ipsum dolor sit amet,
+														consectetur adipiscing elit. Ut
+														laoreet ut lacus a tincidunt. Quisque luctus nibh augue, non
+														ultrices arcu molestie in. In"
+													</div>
+												</div>
+											</div>
+											<div class="testimonial">
+												<div class="testimonial-info"><a class="testimonial-avatar"
+														href="#"><img src="assets/img/avatars/avatar-02.jpg"
+															alt="" /></a>
+													<h5 class="testimonial-name">Maria Gutierrez</h5><span
+														class="testimonial-position">Designer</span>
+												</div>
+												<div class="testimonial-content">
+													<div class="testimonial-text">Mauris "lacinia venenatis dolor sit
+														amet viverra. Integer
+														malesuada nulla neque. Sed rutrum ligula eu sagittis volutpat.
+														Aliquam erat volutpat.
+														Praesen."</div>
+												</div>
+											</div>
+											<div class="testimonial">
+												<div class="testimonial-info"><a class="testimonial-avatar"
+														href="#"><img src="assets/img/avatars/avatar-01.jpg"
+															alt="" /></a>
+													<h5 class="testimonial-name">Brandon Hanson</h5><span
+														class="testimonial-position">Support</span>
+												</div>
+												<div class="testimonial-content">
+													<div class="testimonial-text">"Lorem ipsum dolor sit amet,
+														consectetur adipiscing elit. Ut
+														laoreet ut lacus a tincidunt. Quisque luctus nibh augue, non
+														ultrices arcu molestie in. In"
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-            </div>
-					</div><!-- End / carousel__element owl-carousel -->
-
-				</div><!-- End / slider -->
-
-				<!-- Service-->
-
-				<!-- Section -->
-				<section class="md-section" style="background-color:#f7f7f7;padding:0;">
-					<div class="container">
-						<div class="textbox-group">
-							<div class="row">
-								<div class="col-md-4 col-lg-4 ">
-
-									<!-- textbox -->
-									<div class="textbox">
-										<div class="textbox__image"><a href="#"><img src="assets/img/development3.png" alt=""/></a></div>
-										<div class="textbox__body">
-											<h2 class="textbox__title"><a href="#">Mobile Development</a></h2>
-											<div class="textbox__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet ut lacus a tincidunt. Quisque lu</div>
+					</div>
+				</div>
+			</section>
+			<section class="partner-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<!-- <h2 class="text-uppercase">Our Partner</h2><br><br> -->
+							<div class="row justify-content-center mb-5">
+								<div class="col-md-12">
+									<div class="carousel-element owl-carousel"
+										data-options='{"loop":true,"dots":false,"nav":true,"margin":30,"responsive":{"0":{"items":2},"768":{"items":3},"992":{"items":5}}}'>
+										<div>
+											<div class="partner"><img src="assets/img/brands/1.png" alt="" /></div>
 										</div>
-									</div><!-- End / textbox -->
-
-								</div>
-								<div class="col-md-4 col-lg-4 ">
-
-									<!-- textbox -->
-									<div class="textbox">
-										<div class="textbox__image"><a href="#"><img src="assets/img/development3.png" alt=""/></a></div>
-										<div class="textbox__body">
-											<h2 class="textbox__title"><a href="#">Website Development</a></h2>
-											<div class="textbox__description">Nam elit ligula, egestas et ornare non, viverra eu justo. Aliquam ornare lectus ut pharetra dictum. </div>
+										<div>
+											<div class="partner"><img src="assets/img/brands/2.png" alt="" /></div>
 										</div>
-									</div><!-- End / textbox -->
-
-								</div>
-								<div class="col-md-4 col-lg-4 ">
-
-									<!-- textbox -->
-									<div class="textbox">
-										<div class="textbox__image"><a href="#"><img src="assets/img/development3.png" alt=""/></a></div>
-										<div class="textbox__body">
-											<h2 class="textbox__title"><a href="#">Desktop Development</a></h2>
-											<div class="textbox__description">Mauris lacinia venenatis dolor sit amet viverra. Integer malesuada nulla neque. Sed rutrum ligula eu</div>
+										<div>
+											<div class="partner"><img src="assets/img/brands/3.png" alt="" /></div>
 										</div>
-									</div><!-- End / textbox -->
+										<div>
+											<div class="partner"><img src="assets/img/brands/4.png" alt="" /></div>
+										</div>
+										<div>
+											<div class="partner"><img src="assets/img/brands/5.png" alt="" /></div>
+										</div>
 
+									</div>
 								</div>
 							</div>
-						</div>
+						</div><span id="contact"></span>
 					</div>
-				</section>
-				<!-- End / Section -->
+				</div>
+			</section>
+			 <section class="contact">
+			 	<div class="container">
+			 		<div class="row" data-aos="fade-up">
 
+			 			<div class="col-lg-4 col-md-8">
+			 				<div class="contact-about">
+			 					<img src="assets/img/logo3.png" alt="" />
+			 					<p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus.
+			 						Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.
+			 					</p>
+			 					<div class="social-links">
+			 						<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+			 						<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+			 						<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+			 						<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+			 						<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+			 					</div>
+			 				</div>
+			 			</div>
+			 			<div class="col-lg-4 col-md-12">
+			 				<div class="info">
+			 					<div>
+			 						<i class="ion-ios-location-outline"></i>
+			 						<p>Jl. Padjajaran No 1<br>Sleman, Yogyakarta Indonesia</p>
+			 					</div>
 
+			 					<div>
+			 						<i class="ion-ios-email-outline"></i>
+			 						<p>cs@domain.com</p>
+			 					</div>
+
+			 					<div>
+			 						<i class="ion-ios-telephone-outline"></i>
+			 						<p>+1 5589 55488 55s</p>
+			 					</div>
+
+			 				</div>
+			 			</div>
+			 			<div class="col-lg-4 col-md-8">
+			 				<div class="form">
+			 					<div id="sendmessage">Your message has been sent. Thank you!</div>
+			 					<div id="errormessage"></div>
+			 					<form action="" method="post" role="form" class="contactForm">
+			 						<div class="form-row">
+			 							<div class="form-group col-lg-6">
+			 								<input type="text" name="name" class="form-control" id="name"
+			 									placeholder="Your Name" data-rule="minlen:4"
+			 									data-msg="Please enter at least 4 chars" />
+			 								<div class="validation"></div>
+			 							</div>
+			 							<div class="form-group col-lg-6">
+			 								<input type="email" class="form-control" name="email" id="email"
+			 									placeholder="Your Email" data-rule="email"
+			 									data-msg="Please enter a valid email" />
+			 								<div class="validation"></div>
+			 							</div>
+			 						</div>
+			 						<div class="form-group">
+			 							<input type="text" class="form-control" name="subject" id="subject"
+			 								placeholder="Subject" data-rule="minlen:4"
+			 								data-msg="Please enter at least 8 chars of subject" />
+			 							<div class="validation"></div>
+			 						</div>
+			 						<div class="form-group">
+			 							<textarea class="form-control" name="message" rows="5" data-rule="required"
+			 								data-msg="Please write something for us" placeholder="Message"></textarea>
+			 							<div class="validation"></div>
+			 						</div>
+			 						<div class="text-center"><button type="submit" title="Send Message">Send Message</button>
+			 						</div>
+			 					</form>
+			 				</div>
+			 			</div>
+
+			 		</div>
+
+			 	</div>
+			 </section>
+
+<footer id="footer">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 text-lg-left text-center">
+				<div class="copyright">
+					&copy; 2019 -  Copyright <strong>KuyDev</strong>. All Rights Reserved
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+					<a href="#">Home</a>
+					<a href="#">About</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Terms of Use</a>
+				</nav>
+			</div>
 		</div>
-		<!-- Vendors-->
-		<script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
-		<script type="text/javascript" src="assets/js/jquery.countUp/jquery.countup.min.js"></script>
-		<script type="text/javascript" src="assets/js/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+	</div>
+</footer>
 
-		<script type="text/javascript" src="assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<script type="text/javascript" src="assets/js/masonry-layout/masonry.pkgd.js"></script>
+<a href="#" class="back-to-top" id="back-to-top"><i class="fa fa-chevron-up"></i></a>
+		
+		<script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
 		<script type="text/javascript" src="assets/js/owl.carousel/owl.carousel.js"></script>
 		<script type="text/javascript" src="assets/js/menu/menu.min.js"></script>
-		<!-- App-->
+		<script type="text/javascript" src="assets/js/smoothscroll/SmoothScroll.min.js"></script>
 		<script type="text/javascript" src="assets/js/main.js"></script>
-	</body>
+</body>
+
 </html>
