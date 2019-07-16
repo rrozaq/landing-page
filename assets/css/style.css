@@ -157,6 +157,7 @@ input[type="button"].btn-block {
     right: 15px;
     bottom: 0;
     transition: none;
+    z-index: 10;
 }
 
 .back-to-top:focus {
@@ -538,8 +539,8 @@ img{
 
 .owl-prev,
 .owl-next {
-    width: 40px;
-    height: 40px;
+    /* width: 40px;
+    height: 40px; */
     text-align: center;
     font-size: 0;
     display: inline-block;
@@ -616,10 +617,12 @@ img{
     background-color: white;
     text-align: center;
     transition: all ease .3s;
+    border-radius: 5%;
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, .2);
 }
 
 .textbox:hover {
-    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 15px 50px 0 #292f74;
 }
 
 .textbox-image img {
@@ -646,13 +649,13 @@ img{
     color: #c2c2c2;
 }
 
-.textbox__style-02 {
+/* .textbox__style-02 {
     border: 1px solid #ebebeb;
 }
 
 .textbox__style-02 .textbox-description {
     margin-bottom: 15px;
-}
+} */
 
 @media (min-width: 768px) {
     .textbox-group {
@@ -660,6 +663,11 @@ img{
         -webkit-transform: translateY(-35%);
                 transform: translateY(-35%);
     }
+}
+@media (max-width: 760px) {
+   .textbox-section {
+       padding-bottom: 150px;
+   }
 }
 
 
@@ -1291,30 +1299,30 @@ img{
 .about-slant.about-slant-white:after {
     background: #fff;
 }
-
-.service-section {
+/* Price */
+.price-section {
     padding: 7em 0 7em 0;
     background: white !important;
 }
 
-.service-section h2 {
+.price-section h2 {
     color: black;
 }
 
-.service-section .lead {
+.price-section .lead {
     color: black;
 }
 
-.service-section.service-slant {
+.price-section.price-slant {
     padding: 7em 0 22em 0;
 }
 
-.service-slant {
+.price-slant {
     position: relative;
     overflow: hidden;
 }
 
-.service-slant:after {
+.price-slant:after {
     width: 120%;
     height: 200px;
     right: -10%;
@@ -1328,44 +1336,136 @@ img{
 }
 
 @media screen and (max-width: 960px) {
-    .service-slant:after {
+    .price-slant:after {
         bottom: -150px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .service-slant:after {
+    .price-slant:after {
         bottom: -170px;
     }
 }
 
-.service-slant.service-slant-dark:after {
+.price-slant.price-slant-dark:after {
     background: #292f74;
 }
+.price-slide {
+    margin: 0 auto;
+    overflow: hidden;
+}
 
-.portfolio-section {
+.price-slide .carousel-element {
+    padding: 0 30px;
+}
+
+.price-slide .owl-stage-outer {
+    overflow: visible !important;
+}
+
+.price {
+    border: 1px solid #ebebeb;
+    padding: 25% 5%;
+    margin: 50px 0;
+    background-color: white;
+    transition: all ease .3s;
+    border-radius: 3%;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .2);
+}
+
+.price:hover {
+    box-shadow: 0 10px 30px 0 #292f74;
+}
+
+.price-info {
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.price-info:after {
+    /* content: "\E67E"; */
+    font-family: 'themify';
+    font-size: 48px;
+    color: #c2c2c2;
+    top: -15px;
+    right: 5px;
+    position: absolute;
+}
+
+.price-name {
+    margin: 0 auto
+}
+
+.price-position {
+    color: #c2c2c2;
+}
+
+.price-content .price-per {
+    font-size: 60px;
+}
+
+.price-content .price-per sup {
+    font-size: 30px;
+    top: -1.5em;
+}
+
+.price-content .price-per strong {
+    color: #000;
+}
+
+.price-content .price-per span {
+    font-size: 25px;
+}
+
+.price-text {
+    font-size: 16px;
+}
+
+.price-text li {
+    text-align: center;
+    list-style: none;
+    line-height: 1.5em
+}
+
+.price-btn {
+    margin-top: 50px;
+    background: #222;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    padding: 3% 8%;
+    color: #fff;
+}
+
+.price-btn:hover {
+    cursor: pointer;
+    background: #666;
+    /* border: 1px solid #666; */
+}
+/* Testimonial */
+.testimonial-section {
     padding: 7em 0 7em 0;
     background: #292f74 !important;
 }
 
-.portfolio-section h2 {
+.testimonial-section h2 {
     color: white;
 }
 
-.portfolio-section .lead {
+.testimonial-section .lead {
     color: white;
 }
 
-.portfolio-section.portfolio-slant {
+.testimonial-section.testimonial-slant {
     padding: 7em 0 22em 0;
 }
 
-.portfolio-slant {
+.testimonial-slant {
     position: relative;
     overflow: hidden;
 }
 
-.portfolio-slant:after {
+.testimonial-slant:after {
     width: 120%;
     height: 200px;
     right: -10%;
@@ -1379,22 +1479,21 @@ img{
 }
 
 @media screen and (max-width: 960px) {
-    .portfolio-slant:after {
+    .testimonial-slant:after {
         bottom: -150px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .portfolio-slant:after {
+    .testimonial-slant:after {
         bottom: -170px;
     }
 }
 
-.portfolio-slant.portfolio-slant-white:after {
+.testimonial-slant.testimonial-slant-white:after {
     background: #fff;
 }
 
-/* Testimonial */
 .our-slide {
     margin: 0 -30px;
     overflow: hidden;
@@ -1614,12 +1713,12 @@ img{
 .contact .form button[type="submit"]:hover {
     cursor: pointer;
     background: #666;
+    border: 1px solid #666;
     border: 0;
     border-radius: 20px;
     padding: 3% 8%;
     color: #fff;
 }
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
