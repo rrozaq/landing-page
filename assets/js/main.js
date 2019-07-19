@@ -96,6 +96,23 @@ $('.back-to-top').on('click', function (e) {
 		scrollTop: 0
 	}, 700);
 });
+	// Gallery - uses the magnific popup jQuery plugin
+	$('.gallery-popup').magnificPopup({
+		type: 'image',
+		removalDelay: 300,
+		mainClass: 'mfp-fade',
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300,
+			easing: 'ease-in-out',
+			opener: function (openerElement) {
+				return openerElement.is('img') ? openerElement : openerElement.find('img');
+			}
+		}
+	});
 /**
  * Menu
  */
@@ -154,6 +171,8 @@ if ($(el).hasClass('open')) {
         }
     });
 });
+
+	
 
 /**
  * Event click search-form

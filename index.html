@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/fonts/themify-icons/themify-icons.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap4/bootstrap-grid.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/magnific-popup/magnific-popup.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -20,7 +21,8 @@
 		<header class="header header-style" id="home">
 			<div class="container">
 				<div class="header-logo"><a href="index.html">
-						<img src="assets/img/logo3.png" alt="" />
+						<!-- <img src="assets/img/logo3.png" alt="" /> -->
+					<p>pwcomp</p>
 					</a></div>
 				<div class="header-toogleGroup">
 					<!-- <div class="header-chooseLanguage">
@@ -34,7 +36,7 @@
 							</div>
 						</div>
 					</div> -->
-					<div class="search-form">
+					<!-- <div class="search-form">
 						<div class="search-form-toggle"><i class="ti-search"></i></div>
 						<div class="search-form_form">
 							<div class="form-search">
@@ -44,7 +46,7 @@
 								</form>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 				<nav class="navbar">
 					<ul class="menu">
@@ -63,6 +65,7 @@
 						<li><a class="smoothscroll" href="#about">about</a></li>
 						<li><a class="smoothscroll" href="#pricing">pricing</a></li>
 						<li><a class="smoothscroll" href="#testimonial">testimonial</a></li>
+						<li><a class="smoothscroll" href="#gallery">gallery</a></li>
 						<li><a class="smoothscroll" href="#contact">contact</a>
 						</li>
 					</ul>
@@ -73,7 +76,7 @@
 			<div class="slider">
 				<div class="carousel-element owl-carousel"
 					data-options='{"items":1,"loop":true,"dots":false,"nav":false,"margin":0, "autoplay": true, "autoplayTimeout": 3000}'>
-					<div class="slider-item clip-ellipse" style="background-image: url('assets/img/banner-img.jpg');">
+					<div class="slider-item clip-ellipse" >
 						<div class="ovrllay">
 							<div class="md-tb">
 								<div class="md-tb-cell">
@@ -308,9 +311,70 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section><span id="gallery"></span>
+
+			<!--==========================
+      Gallery Section
+    ============================-->
+			<section class="gallery">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 text-center">
+						<h2 class="text-uppercase">Our Gallery</h2>
+						<div class="row justify-content-center  ">
+							<div class="col-md-12">
+					<div class="row no-gutters">
+
+						<div class="col-lg-4 col-md-6">
+							<div class="gallery-item" data-aos="fade-up">
+								<a href="assets/img/gallery/gallery-1.jpg" class="gallery-popup">
+									<img src="assets/img/gallery/gallery-1.jpg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="gallery-item" data-aos="fade-up">
+								<a href="assets/img/gallery/gallery-1.jpg" class="gallery-popup">
+									<img src="assets/img/gallery/gallery-1.jpg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="gallery-item" data-aos="fade-up">
+								<a href="assets/img/gallery/gallery-1.jpg" class="gallery-popup">
+									<img src="assets/img/gallery/gallery-1.jpg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="gallery-item" data-aos="fade-up">
+								<a href="assets/img/gallery/gallery-1.jpg" class="gallery-popup">
+									<img src="assets/img/gallery/gallery-1.jpg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="gallery-item" data-aos="fade-up">
+								<a href="assets/img/gallery/gallery-1.jpg" class="gallery-popup">
+									<img src="assets/img/gallery/gallery-1.jpg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="gallery-item" data-aos="fade-up">
+								<a href="assets/img/gallery/gallery-1.jpg" class="gallery-popup">
+									<img src="assets/img/gallery/gallery-1.jpg" alt="">
+								</a>
+							</div>
+						</div>
+						
+					</div>
+</div>
+				</div>
+			</section><!-- #gallery -->
+
 			<section class="partner-section">
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-12 text-center">
 							<!-- <h2 class="text-uppercase">Our Partner</h2><br><br> -->
@@ -347,7 +411,8 @@
 
 			 			<div class="col-lg-4 col-md-8">
 			 				<div class="contact-about">
-			 					<img src="assets/img/logo3.png" alt="" />
+								 <h1>pwcomp</h1>
+			 					<!-- <img src="assets/img/logo3.png" alt="" /> -->
 			 					<p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus.
 			 						Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.
 			 					</p>
@@ -380,7 +445,15 @@
 			 				</div>
 			 			</div>
 			 			<div class="col-lg-4 col-md-8">
-			 				<div class="form">
+							 	<div class="subscribe">
+							 		<h5>Newsletter</h5>
+							 		<p>Insights await in your company's data. Bring them into focus with BlueLance.</p>
+							 		<div class="input-group">
+							 			<input type="text" class="form-control" placeholder="Enter your email address">
+							 			<input type="submit" class="form-control" value="Subscribe">
+							 		</div>
+							 	</div>
+			 				<!-- <div class="form">
 			 					<div id="sendmessage">Your message has been sent. Thank you!</div>
 			 					<div id="errormessage"></div>
 			 					<form action="" method="post" role="form" class="contactForm">
@@ -412,7 +485,7 @@
 			 						<div class="text-center"><button type="submit" title="Send Message">Send Message</button>
 			 						</div>
 			 					</form>
-			 				</div>
+			 				</div> -->
 			 			</div>
 
 			 		</div>
@@ -425,7 +498,7 @@
 		<div class="row">
 			<div class="col-lg-6 text-lg-left text-center">
 				<div class="copyright">
-					&copy; 2019 -  Copyright <strong>KuyDev</strong>. All Rights Reserved
+					&copy; 2019 -  Copyright <strong>pwcomp</strong>. All Rights Reserved
 				</div>
 			</div>
 			<div class="col-lg-6">
@@ -446,6 +519,7 @@
 		<script type="text/javascript" src="assets/js/owl.carousel/owl.carousel.js"></script>
 		<script type="text/javascript" src="assets/js/menu/menu.min.js"></script>
 		<script type="text/javascript" src="assets/js/smoothscroll/SmoothScroll.min.js"></script>
+		 <script type="text/javascript" src="assets/js/magnific-popup/magnific-popup.min.js"></script>
 		<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 
